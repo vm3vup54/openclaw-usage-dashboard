@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenClaw Usage Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>OpenClaw Usage Dashboard</h1>
+    <div class="sub">
+      <span id="asOf">載入中…</span>
+      <span class="pill" id="fxPill">FX: 載入中…</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card">
+        <div class="label">今日總花費</div>
+        <div class="value" id="todayUsd">—</div>
+        <div class="muted" id="todayTwd">—</div>
+      </div>
+      <div class="card">
+        <div class="label">近 7 天</div>
+        <div class="value" id="w7Usd">—</div>
+        <div class="muted" id="w7Twd">—</div>
+      </div>
+      <div class="card">
+        <div class="label">近 30 天</div>
+        <div class="value" id="w30Usd">—</div>
+        <div class="muted" id="w30Twd">—</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>每日花費（USD）</h2>
+        <canvas id="chartDaily"></canvas>
+      </div>
+      <div class="panel">
+        <h2>近 30 天模型占比（USD）</h2>
+        <canvas id="chartModels"></canvas>
+        <div class="hint">註：以各日的 byModel 加總估算。</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>資料來源</h2>
+      <ul>
+        <li>使用量/成本：來自你本機 OpenClaw session JSONL 的彙總輸出（工具：<code>tools/update_usage.py</code>）。</li>
+        <li>匯率：臺灣銀行牌告匯率（<code>tools/fetch_bot_fx.py</code>），預設使用「即期賣出」。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

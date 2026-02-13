@@ -1,0 +1,12 @@
+{
+  "asOf": "",
+  "days": [
+    {
+      "date": "2026-02-13",
+      "total": {"calls": 0, "tokens": 0, "costUsd": 0.0},
+      "byModel": {
+        "openai/gpt-5.2": {"calls": 0, "tokens": 0, "costUsd": 0.0}
+      }
+    }
+  ]
+}
