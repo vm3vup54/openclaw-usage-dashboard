@@ -1,6 +1,26 @@
 {
-  "asOf": "2026-02-13 13:54:12",
+  "asOf": "2026-02-13 13:59:24",
   "days": [
+    {
+      "date": "2026-02-12",
+      "total": {
+        "calls": 85,
+        "tokens": 2388784,
+        "costUsd": 1.2838
+      },
+      "byModel": {
+        "google-antigravity/claude-opus-4-5-thinking": {
+          "calls": 6,
+          "tokens": 0,
+          "costUsd": 0.0
+        },
+        "google-antigravity/claude-sonnet-4-5": {
+          "calls": 79,
+          "tokens": 2388784,
+          "costUsd": 1.2838
+        }
+      }
+    },
     {
       "date": "2026-02-13",
       "total": {
