@@ -19,4 +19,8 @@ git config user.name "openclaw-bot"
 git config user.email "openclaw-bot@local"
 
 git commit -m "chore: update usage (yesterday)"
+
+# Remote may have new commits (e.g., fx updates from GitHub Actions). Rebase then push.
+git pull --rebase origin main
+
 git push
