@@ -1,11 +1,11 @@
 {
-  "quotedAt": "2026-04-17 01:21",
+  "quotedAt": "2026-04-18 01:01",
   "usdTwd": {
     "label": "即期賣出",
-    "spotSelling": 31.62,
-    "spotBuying": 31.47,
-    "cashSelling": 31.815,
-    "cashBuying": 31.145
+    "spotSelling": 31.655,
+    "spotBuying": 31.505,
+    "cashSelling": 31.85,
+    "cashBuying": 31.18
   },
   "source": "https://rate.bot.com.tw/xrt?Lang=zh-TW"
 }
